@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>白猫雷达QQ：1989999200</title>
+  <title>mlgb-马彬</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/openlayers@4.6.4/dist/ol.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
@@ -30,6 +30,15 @@
 	color: #FF0000;
 	font-weight: bold;
 	font-family: "宋体";
+	font-size: 9px;
+}
+.STYLE6 {font-size: 9px}
+.STYLE7 {font-weight: bold; font-family: "宋体"; color: #FF0000;}
+.STYLE9 {
+	font-weight: bold;
+	font-family: "宋体";
+	color: #0000FF;
+	font-size: medium;
 }
 -->
   </style>
@@ -39,18 +48,22 @@
   <div id="app">
     <div class="sidenav" id="navBox" style="display:none;">
       <section class="section">
-        <h1 class="title STYLE4">雷神开始加载。。</h1>
-        <h1 class="title STYLE2">版本：1.1</h1> 
-        <h1 class="title STYLE1">作者：白猫</h1>
-        <h1 class="title STYLE1">Q：1989999200</h1>	
-		<label class="label">更新内容:</label> 
-		<span class="STYLE5">修复车辆跟随问题。</span>
+        <h1 class="title STYLE4">没有名字</h1>
+        <h1 class="title STYLE2">版本：没有版本</h1> 
+        <h1 class="title STYLE1">作者：没有作者</h1>
+        <h1 class="title STYLE1">Q：335759704</h1>	
+		<label class="label">更新内容:</label> </h1>
+		<span class="STYLE5">没有内容</span><span class="STYLE6"><br>
+		<span class="STYLE7">没有更新</span><br>
+        <span class="STYLE7">默认网页雷达30FPS</span><br>
+		<br>
+		<span class="STYLE9">成杰大傻逼</span><br>
+			   </span>
         <div align="right">
           <!-- <div class="field is-grouped">
           <a class="button is-small">Button</a>
           <a class="button is-small">Button2</a>
         </div> -->
-          
         </div>
 		<br>
 		<br>
@@ -68,7 +81,8 @@
           
         <!-- <label class="label" v-on:dblclick="showNoItems">Item Options:</label> -->
         <label class="label">物资选择</label>
-         <!-- <input type="checkbox" id="showBack" v-model="showBack"><label for="showBack">背包　</label>
+          <input type="checkbox" id="showForeGrip" v-model="showForeGrip"><label for="showForeGrip">显示物品（必须勾选）</label><br><br>
+          <input type="checkbox" id="showBack" v-model="showBack"><label for="showBack">背包　</label>
           <input type="checkbox" id="showArmor2" v-model="showArmor2"><label for="showArmor2">甲２</label>
           <input type="checkbox" id="showArmor3" v-model="showArmor3"><label for="showBack3">甲３　</label>
           <input type="checkbox" id="showHead2" v-model="showHead2"><label for="showHead2">头２</label>
@@ -86,7 +100,6 @@
           <input type="checkbox" id="showAmmo762" v-model="showAmmo762"><label for="showAmmo762">7.62</label>
           <br><br>
 
-          <input type="checkbox" id="showForeGrip" v-model="showForeGrip"><label for="showForeGrip">握把　</label>
           <input type="checkbox" id="showLowST" v-model="showLowST"><label for="showLowST">基础镜</label>
           <input type="checkbox" id="showHighST" v-model="showHighST"><label for="showHighST">高倍镜</label>
           <br>
@@ -103,34 +116,36 @@
           <input type="checkbox" id="showSRStock" v-model="showSRStock"><label for="showSRStock">狙枪托</label>
           <br><br>
 
-          <input type="checkbox" id="showM16A4" v-model="showM16A4"><label for="showM16A4">Ｍ１６</label>
-          <input type="checkbox" id="showSCAR" v-model="showSCAR"><label for="showSCAR">Ｓｃａｒ</label>
-          <input type="checkbox" id="showHK416" v-model="showHK416"><label for="showHK416">Ｍ４１６</label>
-          <input type="checkbox" id="showAK47" v-model="showAK47"><label for="showAK47">Ａｋｍ</label>
+          <input type="checkbox" id="showM16A4" v-model="showM16A4"><label for="showM16A4">M16</label>
+          <input type="checkbox" id="showSCAR" v-model="showSCAR"><label for="showSCAR">SCAR</label>
+          <input type="checkbox" id="showHK416" v-model="showHK416"><label for="showHK416">M416</label>
+          <input type="checkbox" id="showAK47" v-model="showAK47"><label for="showAK47">AKM</label>
           <br>
 
-          <input type="checkbox" id="showMini14" v-model="showMini14"><label for="showMini14">Ｍｉｎｉ</label>
-          <input type="checkbox" id="showSKS" v-model="showSKS"><label for="showSKS">Ｓｋｓ</label>
-          <input type="checkbox" id="showKar98k" v-model="showKar98k"><label for="showKar98k">９８ｋ　</label>
-          <input type="checkbox" id="showPan" v-model="showPan"><label for="showPan">平底锅</label> -->
+          <input type="checkbox" id="showMini14" v-model="showMini14"><label for="showMini14">Mini</label>
+          <input type="checkbox" id="showSKS" v-model="showSKS"><label for="showSKS">SKS</label>
+          <input type="checkbox" id="showKar98k" v-model="showKar98k"><label for="showKar98k">98K　</label>
+          <input type="checkbox" id="showPan" v-model="showPan"><label for="showPan">平底锅</label> 
 
         <hr>
         <label class="label">刷新率:</label>
-          <a class="button is-small" @click="setFPS(5)">fps5</a>
+        <div align="left">网页雷达默认30FPS，为了网页稳定性。
+          <!--<a class="button is-small" @click="setFPS(5)">fps5</a>
           <a class="button is-small" @click="setFPS(15)">fps15</a>
           <a class="button is-small" @click="setFPS(30)">fps30</a>
-          <a class="button is-small" @click="setFPS(60)">fps60</a>
-          <br><br>
+          <a class="button is-small" @click="setFPS(60)">fps60</a>-->
+          <br>
+          <br>
 
-        <!-- <a class="button is-small" @click="toggleRefresh">{{ toggleButtonText }}</a>
+          <!-- <a class="button is-small" @click="toggleRefresh">{{ toggleButtonText }}</a>
         <br> -->
 
-        <span>游戏开始: {{ gameStartTime }}</span>
-        <br>
-        <span>结束: {{ lastPacketTime }}</span>
-        <br>
+          <span>游戏开始: {{ gameStartTime }}</span>
+          <br>
+          <span>结束: {{ lastPacketTime }}</span>
+          <br>
 
-        <span>{{ coordinate }}</span>
+          <span>{{ coordinate }}</span>        </div>
       </section>
 
     </div>
